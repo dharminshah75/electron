@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Encryption</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="linkers/require.js"></script>
+	<script src="linkers/encrypt.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1> Hey There </h1>
+			<p> Please Enter your text </p>
+			
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-xs-4">
+				<input id="plain_text" type="text" style="height: 100px ; width: 200px;" placeholder="Start Typing...." name="plain_text">
+				<br><br>
+				<input id="key_en" type="text" name="key" placeholder="Enter key here"><br><br>
+				<button class="btn btn-success" onclick="encrypt()">Encrypt</button>
+				<br><br>
+				<p id = "cipher_text">Your Encrypted text will appear here</p>
+			</div>
+			<div class="col-xs-4"></div>
+			<div class="col-xs-4">
+				<input id="ciphered_text" type="text" style="height: 100px ; width: 200px;" placeholder="Start Typing...." name="ciphered_text">
+				<br><br>
+				<input id="key_de" type="text" name="key" placeholder="Enter key here"><br><br>
+				<button class="btn btn-success" onclick="decrypt()">Decrypt</button>
+				<br><br>
+				<p id = "decrypted_text">Your Decrpyted text will appear here</p>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
